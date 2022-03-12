@@ -88,6 +88,7 @@ const showBooks = (books) => {
 };
 
 const createCard = (book) => {
+  console.log("book: " + book.id);
   const div = document.createElement("div");
   div.classList.add("card");
 
@@ -96,7 +97,7 @@ const createCard = (book) => {
   div.innerHTML = `
   <div class="image-container">
     <img
-      src="${book.Image}"
+      src="${book.image}"
       alt=""
     />
     <div class="button-container">
