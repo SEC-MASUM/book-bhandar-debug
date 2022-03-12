@@ -142,6 +142,7 @@ const displayCart = () => {
 };
 
 const displayWishlist = () => {
+  document.getElementById("wishlist").textContent = "";
   const wishlist = getWishlistItems();
   console.log(wishlist);
 
